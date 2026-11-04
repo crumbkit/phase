@@ -1,16 +1,13 @@
 # phase
 
-phase runs the apps of a workspace on your machine. It starts each app from a
-published release or from a checkout you are editing, gives it only the
-environment variables its manifest declares, runs it under the operating
-system's sandbox, waits for it to become ready, and restarts it when it fails.
+phase now lives in the multiverse repository, as the crate
+[`crates/phase`](https://github.com/crumbkit/multiverse/tree/main/crates/phase)
+in [crumbkit/multiverse](https://github.com/crumbkit/multiverse). Its design
+is at
+[`crates/phase/docs/design.md`](https://github.com/crumbkit/multiverse/blob/main/crates/phase/docs/design.md),
+and its history up to the move was imported there.
 
-phase is a Rust library with a command. The command is run through `mxv`, the
-multiverse command, as `mxv phase …`, and the crate is published as
-`mxv-phase`. Other programs can link the library instead.
-
-phase is being designed. [docs/design.md](docs/design.md) describes what it
-will do and lists the decisions that are still open. No code exists yet.
+This repository is archived and receives no further changes.
 
 ## Licence
 
